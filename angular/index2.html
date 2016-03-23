@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="app.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.5/angular-route.min.js"></script>
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+li2 b {
+    display: block;
+    color: black;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+uk {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #666;
+}
+li a:hover {
+    background-color: #222;
+}
+
+</style>
+</head>
+<body ng-app=mainApp>
+<div>
+<ul>
+  <li><a class="active" href="#/expenses">expenses</a></li>
+  <li><a href="#/personalProgram">personal program</a></li>
+  <li><a href="#/catgory">catgory</a></li>
+</ul>
+</div>
+<div>
+<uk>
+    <li2><b class="uk-panel uk-panel-divider">tal</b></li2>
+    <li2><b class="uk-panel uk-panel-divider">303057400</b></li2> 
+</div>
+</uk>
+
+      <center><div ng-view></div></center>
+</body>
+</html>
